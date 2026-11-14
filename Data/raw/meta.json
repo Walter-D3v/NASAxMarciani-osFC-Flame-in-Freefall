@@ -1,0 +1,104 @@
+{
+ "PSI-69": {
+  "acronym": "FLEX",
+  "title": "Flame Extinguishment Experiment",
+  "doi": "10.60555/mbq8-0451",
+  "totalFileSize": 923832535657,
+  "publications": 51,
+  "tables": [
+   "PSI-69_Experimental table_FLEX.csv"
+  ]
+ },
+ "PSI-68": {
+  "acronym": "FLEX-2",
+  "title": "Flame Extinguishment Experiment - 2",
+  "doi": "10.60555/byp8-h018",
+  "totalFileSize": 1224752113090,
+  "publications": 48,
+  "tables": [
+   "PSI-68_Experimental table_Flex2.csv"
+  ]
+ },
+ "PSI-39": {
+  "acronym": "CFI",
+  "title": "Cool Flames Investigation",
+  "doi": "10.60555/m6pj-a914",
+  "totalFileSize": 718889568684,
+  "publications": 7,
+  "tables": [
+   "PSI-39_Experimental table_CFI.csv"
+  ]
+ },
+ "PSI-23": {
+  "acronym": "ACME s-Flame",
+  "title": "Advanced Combustion via Microgravity Experiments-Structure and Response of Spherical Diffusion Flames",
+  "doi": "10.60555/k57n-p030",
+  "totalFileSize": 782172126062,
+  "publications": 44,
+  "tables": [
+   "PSI-23_Experimental table_ACME s-Flame.csv"
+  ]
+ },
+ "PSI-10": {
+  "acronym": "ACME/Flame Design",
+  "title": "Advanced Combustion via Microgravity Experiments / Flame Design",
+  "doi": "10.60555/w4zy-bt45",
+  "totalFileSize": 2180435304347,
+  "publications": 33,
+  "tables": [
+   "PSI-10_Experimental table_Flame Design_Normal Flame.csv",
+   "PSI-10_Experimental table_Flame Design_Inverse Flame.csv"
+  ]
+ },
+ "PSI-21": {
+  "acronym": "ACME CLD Flame",
+  "title": "Advanced Combustion via Microgravity Experiments / Coflow Laminar Diffusion Flame",
+  "doi": "10.60555/23e1-9950",
+  "totalFileSize": 2005536295241,
+  "publications": 18,
+  "tables": [
+   "PSI-21_Experimental table_CLD Flame.csv"
+  ]
+ },
+ "PSI-20": {
+  "acronym": "ACME BRE",
+  "title": "Advanced Combustion via Microgravity Experiments - Burning Rate Emulator",
+  "doi": "10.60555/vb93-3y72",
+  "totalFileSize": 2035568427496,
+  "publications": 16,
+  "tables": [
+   "PSI-20_Experimental table_ACME BRE.csv"
+  ]
+ },
+ "PSI-25": {
+  "acronym": "BASS-II",
+  "title": "Burning and Suppression of Solids - II",
+  "doi": "10.60555/4qc4-de67",
+  "totalFileSize": 274631106141,
+  "publications": 17,
+  "tables": [
+   "PSI-25_Experimental table_BASS-II.csv"
+  ]
+ },
+ "PSI-107": {
+  "acronym": "SPICE",
+  "title": "Smoke Point In Co-flow Experiment",
+  "doi": "10.60555/9kbh-e962",
+  "totalFileSize": 6946864573,
+  "publications": 9,
+  "tables": [
+   "PSI-107_Experimental table_Spice.csv"
+  ]
+ },
+ "PSI-159": {
+  "acronym": "ACME CFI-G",
+  "title": "Advanced Combustion via Microgravity Experiments / Cool Flames Investigation with Gases",
+  "doi": "10.60555/cyt1-kh64",
+  "totalFileSize": 2085592429259,
+  "publications": 2,
+  "tables": [
+   "PSI-159_Experimental table_CFI-G_Normal Flames.csv",
+   "PSI-159_Experimental table_CFI-G_Inverse Flames.csv"
+  ]
+ }
+}

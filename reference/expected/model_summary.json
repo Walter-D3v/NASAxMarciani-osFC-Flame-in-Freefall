@@ -1,0 +1,193 @@
+{
+ "dext": {
+  "n": 196,
+  "mae": 0.4181177828722237,
+  "r2": 0.7094321950175484,
+  "mae_baseline": 0.8562359433569346,
+  "importance": [
+   {
+    "feature": "Initial diameter",
+    "importance": 0.664
+   },
+   {
+    "feature": "O2 fraction",
+    "importance": 0.3717
+   },
+   {
+    "feature": "Fuel (heptane vs methanol)",
+    "importance": 0.1762
+   },
+   {
+    "feature": "CO2 fraction",
+    "importance": 0.0816
+   },
+   {
+    "feature": "Pressure",
+    "importance": 0.0695
+   },
+   {
+    "feature": "He fraction",
+    "importance": 0.0133
+   }
+  ]
+ },
+ "K": {
+  "n": 257,
+  "mae": 0.05972154618488075,
+  "r2": 0.5952556089326773,
+  "mae_baseline": 0.10665354509530801,
+  "importance": [
+   {
+    "feature": "O2 fraction",
+    "importance": 0.0634
+   },
+   {
+    "feature": "Initial diameter",
+    "importance": 0.0255
+   },
+   {
+    "feature": "He fraction",
+    "importance": 0.0231
+   },
+   {
+    "feature": "CO2 fraction",
+    "importance": 0.0148
+   },
+   {
+    "feature": "Fuel (heptane vs methanol)",
+    "importance": 0.0103
+   },
+   {
+    "feature": "Pressure",
+    "importance": 0.0093
+   }
+  ]
+ },
+ "outcome": {
+  "n": 261,
+  "accuracy": 0.6973180076628352,
+  "majority_baseline": 0.685823754789272,
+  "confusion": [
+   {
+    "actual": "extinction",
+    "predicted": "extinction",
+    "count": 146
+   },
+   {
+    "actual": "extinction",
+    "predicted": "disruption",
+    "count": 23
+   },
+   {
+    "actual": "extinction",
+    "predicted": "completion",
+    "count": 10
+   },
+   {
+    "actual": "disruption",
+    "predicted": "extinction",
+    "count": 17
+   },
+   {
+    "actual": "disruption",
+    "predicted": "disruption",
+    "count": 34
+   },
+   {
+    "actual": "disruption",
+    "predicted": "completion",
+    "count": 4
+   },
+   {
+    "actual": "completion",
+    "predicted": "extinction",
+    "count": 18
+   },
+   {
+    "actual": "completion",
+    "predicted": "disruption",
+    "count": 7
+   },
+   {
+    "actual": "completion",
+    "predicted": "completion",
+    "count": 2
+   }
+  ],
+  "importance": [
+   {
+    "feature": "O2 fraction",
+    "importance": 0.2473
+   },
+   {
+    "feature": "Initial diameter",
+    "importance": 0.1837
+   },
+   {
+    "feature": "Pressure",
+    "importance": 0.1557
+   },
+   {
+    "feature": "Fuel (heptane vs methanol)",
+    "importance": 0.0941
+   },
+   {
+    "feature": "CO2 fraction",
+    "importance": 0.0885
+   },
+   {
+    "feature": "He fraction",
+    "importance": 0.0492
+   }
+  ]
+ },
+ "d2law": {
+  "n": 158,
+  "median_ratio": 1.0518710204240347,
+  "n_anomalies": 22
+ },
+ "hot": {
+  "n": 331,
+  "auc": 0.8183292328338181,
+  "accuracy": 0.8126888217522659,
+  "majority_baseline": 0.7945619335347432,
+  "importance": [
+   {
+    "feature": "Adiabatic flame T",
+    "importance": 0.2751
+   },
+   {
+    "feature": "Stoich. mixture fraction Zst",
+    "importance": 0.1506
+   },
+   {
+    "feature": "Pressure",
+    "importance": 0.0176
+   },
+   {
+    "feature": "Inverse flame",
+    "importance": 0.0118
+   },
+   {
+    "feature": "Fuel dilution",
+    "importance": 0.0055
+   },
+   {
+    "feature": "Butane",
+    "importance": 0.004
+   },
+   {
+    "feature": "Ethane",
+    "importance": 0.0021
+   },
+   {
+    "feature": "Propane",
+    "importance": 0.0002
+   },
+   {
+    "feature": "Normal flame",
+    "importance": 0.0001
+   }
+  ]
+ }
+}
