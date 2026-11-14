@@ -3,13 +3,13 @@
 Work top to bottom. A milestone is done only when every acceptance check passes and the named subagent's review
 has no open blocking findings.
 
-## M0: Environment and oracle (½ day)
+## M0: Environment and oracle (½ day) (Fernando)
 - [ ] `uv sync` works; `uv run pytest -q` passes (the raw-data tests pass, the regression tests skip).
 - [ ] `uv run pytest -q -m slow` re-runs `reference/scripts/clean.py` and `models.py` into a temp dir and matches
       `reference/expected/` (this proves the environment reproduces the prototype).
 - Review: none.
 
-## M1: Load and clean (FLEX, CFI-G)
+## M1: Load and clean (FLEX, CFI-G) (Fernando)
 - [ ] `mgcomb.io.load_raw(table_id)`, with table ids such as `flex`, `cfig_normal`, `cfig_inverse`.
 - [ ] `mgcomb.clean.flex.clean_flex` and `mgcomb.clean.cfig.clean_cfig` match the contracts in CLAUDE.md.
 - [ ] Add `test_uid` and `qc_flags` (a list or semicolon-joined string) for the known quirks.
@@ -18,7 +18,7 @@ has no open blocking findings.
       (floats within 1e-6).
 - Review: **data-validator**.
 
-## M2: Physics and features
+## M2: Physics and features (Walter)
 - [ ] `physics.d2law_check(flex)` reproduces `reference/expected/d2law_check.csv` (158 extinction rows, median
       ratio 1.052, 22 IQR outliers, C13H102 included) by default.
 - [ ] `d2law_check(flex, exclude_flagged=True)` drops QC-flagged rows; document how the stats change.
@@ -26,7 +26,7 @@ has no open blocking findings.
 - [ ] Unit tests for the d² law helpers with hand-computed values.
 - Review: **physics-reviewer**.
 
-## M3: Baseline models
+## M3: Baseline models (Fernando)
 - [ ] `models.run_all()` returns a dict with the same shape as `model_summary.json`.
 - [ ] Scores within ±0.02 of the reference table in CLAUDE.md.
 - [ ] Out-of-fold predictions are saved to `data/processed/`.
@@ -35,7 +35,7 @@ has no open blocking findings.
 - [ ] `pipeline.py` runs raw → processed → models and writes `data/processed/mgcomb.duckdb`.
 - Review: **model-auditor**.
 
-## M4: Streamlit dashboard (rebuild of the reference dashboard)
+## M4: Streamlit dashboard (rebuild of the reference dashboard) (Walter)
 Pages and charts:
 1. **Home:** KPI cards (FLEX tests 274, 67.9% extinction; CFI-G flames 331, 79.5% hot-ignited; d_ext R²; hot-ignition AUC)
    and a one-sentence takeaway computed from the metrics (e.g. "barely beats" when the gain over baseline is under 0.05).
