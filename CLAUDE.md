@@ -25,6 +25,14 @@ and video (about 12 TB in total) were NOT downloaded.
 
 `data/raw/` is **read-only**. Never edit, re-save or reformat those files. All fixes happen in code.
 
+**Also in `Data/`:**
+- `Data/PSI-117/` (read-only): PSI *analyzed* data, which is digitized figure curves (experiment plus simulation)
+  of droplet cool flames for n-heptane, n-decane and n-dodecane, from 4 papers (PROCI 2019 ×2, PROCI 2023,
+  MST 2024). It is not a per-test table and it is not in `meta.json`. Use it only for physical validation and
+  context, never as model training rows. Full documentation and quirks: `docs/PSI-117.md`.
+- `Data/clean/` is **ignored for now**. It holds byte-identical copies of `data/raw/` and of
+  `reference/expected/`, plus a zip of the raw files. Don't read from it in code or tests.
+
 ## Repository layout
 
 ```
@@ -35,6 +43,7 @@ reference/expected/    oracle outputs: cleaned tables, predictions, model_summar
 src/mgcomb/            the package you are building
 tests/                 pytest suite; regression tests compare src/mgcomb against reference/expected
 docs/ROADMAP.md        milestones with acceptance criteria; work through them in order
+docs/PSI-117.md        PSI-117 analyzed data: papers, per-file block layout, quirks, intended use
 ```
 
 Target package layout. Create modules as milestones need them; don't scaffold empty files ahead of time.
