@@ -1,0 +1,27 @@
+# Local environments
+.venv/
+venv/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Packaging
+build/
+dist/
+*.egg-info/
+
+# Pipeline outputs are reproducible from raw + code. Keep the directory.
+data/processed/*
+!data/processed/.gitkeep
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
