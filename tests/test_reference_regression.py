@@ -20,7 +20,7 @@ def _assert_shared_columns_equal(got: pd.DataFrame, exp: pd.DataFrame, key: str)
         else:
             gs = g[c].astype("string").fillna("<NA>")
             es = e[c].astype("string").fillna("<NA>")
-            bad = (gs != es)
+            bad = gs != es
             assert not bad.any(), f"{c}: {g.loc[bad, key].tolist()[:10]}"
 
 
@@ -46,8 +46,18 @@ def test_d2law_matches_oracle(expected_flex):
     assert abs(got["ratio"].median() - exp["ratio"].median()) < 1e-3
 
 
-@pytest.mark.parametrize("model,metric", [("dext", "r2"), ("dext", "mae"), ("K", "r2"), ("K", "mae"),
-                                          ("outcome", "accuracy"), ("hot", "auc"), ("hot", "accuracy")])
+@pytest.mark.parametrize(
+    "model,metric",
+    [
+        ("dext", "r2"),
+        ("dext", "mae"),
+        ("K", "r2"),
+        ("K", "mae"),
+        ("outcome", "accuracy"),
+        ("hot", "auc"),
+        ("hot", "accuracy"),
+    ],
+)
 def test_model_scores_match_oracle(model, metric):
     models = pytest.importorskip("mgcomb.models")
     if not hasattr(models, "run_all"):

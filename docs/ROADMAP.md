@@ -4,8 +4,8 @@ Work top to bottom. A milestone is done only when every acceptance check passes 
 has no open blocking findings.
 
 ## M0: Environment and oracle (½ day) (Fernando)
-- [ ] `uv sync` works; `uv run pytest -q` passes (the raw-data tests pass, the regression tests skip).
-- [ ] `uv run pytest -q -m slow` re-runs `reference/scripts/clean.py` and `models.py` into a temp dir and matches
+- [x] `uv sync` works; `uv run pytest -q` passes (the raw-data tests pass, the regression tests skip).
+- [x] `uv run pytest -q -m slow` re-runs `reference/scripts/clean.py` and `models.py` into a temp dir and matches
       `reference/expected/` (this proves the environment reproduces the prototype).
 - Review: none.
 

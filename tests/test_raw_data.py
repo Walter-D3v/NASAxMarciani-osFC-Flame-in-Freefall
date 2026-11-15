@@ -4,9 +4,18 @@ import pytest
 from conftest import RAW_FILES, read_raw
 
 EXPECTED_ROWS = {
-    "flex": 274, "flex2": 8, "cfi": 87, "sflame": 18, "flame_design_normal": 207,
-    "flame_design_inverse": 120, "cld": 32, "bre": 18, "bass2": 129, "spice": 469,
-    "cfig_normal": 179, "cfig_inverse": 154,
+    "flex": 274,
+    "flex2": 8,
+    "cfi": 87,
+    "sflame": 18,
+    "flame_design_normal": 207,
+    "flame_design_inverse": 120,
+    "cld": 32,
+    "bre": 18,
+    "bass2": 129,
+    "spice": 469,
+    "cfig_normal": 179,
+    "cfig_inverse": 154,
 }
 
 
@@ -17,8 +26,16 @@ def test_raw_row_counts(key):
 
 def test_flex_raw_columns_present():
     cols = set(read_raw("flex").columns)
-    for c in ["FLEX Identifier", "Fuel", "Ambient pressure; mmHg", "Droplet initial diameter; mm",
-              "Visible flame extinction diameter; mm", "Burning rate; mm", "Burn time; s", "Test end"]:
+    for c in [
+        "FLEX Identifier",
+        "Fuel",
+        "Ambient pressure; mmHg",
+        "Droplet initial diameter; mm",
+        "Visible flame extinction diameter; mm",
+        "Burning rate; mm",
+        "Burn time; s",
+        "Test end",
+    ]:
         assert c in cols, c
 
 
