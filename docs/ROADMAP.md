@@ -10,11 +10,11 @@ has no open blocking findings.
 - Review: none.
 
 ## M1: Load and clean (FLEX, CFI-G) (Fernando)
-- [ ] `mgcomb.io.load_raw(table_id)`, with table ids such as `flex`, `cfig_normal`, `cfig_inverse`.
-- [ ] `mgcomb.clean.flex.clean_flex` and `mgcomb.clean.cfig.clean_cfig` match the contracts in CLAUDE.md.
-- [ ] Add `test_uid` and `qc_flags` (a list or semicolon-joined string) for the known quirks.
-- [ ] `mgcomb.schemas` (pandera) validates both outputs. Tests cover every known quirk.
-- [ ] Regression: all shared columns equal `reference/expected/flex_droplets.csv` and `cfig_gas_flames.csv`
+- [x] `mgcomb.io.load_raw(table_id)`, with table ids such as `flex`, `cfig_normal`, `cfig_inverse`.
+- [x] `mgcomb.clean.flex.clean_flex` and `mgcomb.clean.cfig.clean_cfig` match the contracts in CLAUDE.md.
+- [x] Add `test_uid` and `qc_flags` (a list or semicolon-joined string) for the known quirks.
+- [x] `mgcomb.schemas` (pandera) validates both outputs. Tests cover every known quirk.
+- [x] Regression: all shared columns equal `reference/expected/flex_droplets.csv` and `cfig_gas_flames.csv`
       (floats within 1e-6).
 - Review: **data-validator**.
 
